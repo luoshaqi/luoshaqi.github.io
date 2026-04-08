@@ -13,7 +13,21 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <div class="hero">
+      <div class="topbar">
+        <div class="brand">
+          <a href="#home" aria-label="Go to top">Shaqi Luo</a>
+        </div>
+        <nav class="nav" aria-label="Primary">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#news">News</a>
+          <a href="#preprints">Preprints</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <section id="home" class="hero" aria-label="Homepage hero">
         <div class="hero-text">
           <p class="eyebrow">Research Homepage</p>
           <h1>Shaqi Luo <span>罗莎祁</span></h1>
@@ -23,12 +37,12 @@
             Multimodal Interaction, Whole-Body Control
           </p>
           <div class="links">
-            <a href="https://scholar.google.com/citations?user=pzZN6xsAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
-            <a href="https://github.com/luoshaqi" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://baai-aether.github.io/baai-thor/" target="_blank" rel="noopener">Project</a>
+            <a class="pill" href="https://scholar.google.com/citations?user=pzZN6xsAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="pill" href="https://github.com/luoshaqi" target="_blank" rel="noopener">GitHub</a>
+            <a class="pill" href="https://baai-aether.github.io/baai-thor/" target="_blank" rel="noopener">Project</a>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </header>
 
@@ -49,28 +63,36 @@
       </div>
     </section>
 
-    <section id="research" class="section alt">
+    <section id="news" class="section alt">
       <div class="container narrow">
-        <h2>Research Interests</h2>
-        <ul class="plain-list">
-          <li>Interactive Whole-Body VLA</li>
-          <li>Embodied Intelligence</li>
-          <li>Variable Impedance Control</li>
-          <li>Multimodal Interaction</li>
-          <li>Whole-Body Control</li>
+        <h2>News</h2>
+        <ul class="timeline">
+          <li>
+            <span class="time">04 / 2026</span>
+            <span class="event">Launched this research homepage (GitHub Pages).</span>
+          </li>
+          <li>
+            <span class="time">03 / 2026</span>
+            <span class="event">Add your latest talk / workshop / paper acceptance here.</span>
+          </li>
         </ul>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="preprints" class="section">
       <div class="container narrow">
-        <h2>Selected Project</h2>
-        <div class="card">
-          <h3>BAAI-THOR</h3>
-          <p>
-            A project page related to current research directions in embodied intelligence.
-          </p>
-          <p><a href="https://baai-aether.github.io/baai-thor/" target="_blank" rel="noopener">Visit project page →</a></p>
+        <h2>Selected Preprints</h2>
+        <div class="pub-list">
+          <article class="pub">
+            <h3 class="pub-title">[Preprint Title]</h3>
+            <p class="pub-authors"><strong>Shaqi Luo</strong>, Coauthor A, Coauthor B</p>
+            <p class="pub-venue">Under Review · 2026</p>
+            <div class="pub-links">
+              <a class="btn" href="#" aria-disabled="true">paper</a>
+              <a class="btn" href="#" aria-disabled="true">project</a>
+              <a class="btn" href="#" aria-disabled="true">code</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -78,27 +100,45 @@
     <section id="publications" class="section alt">
       <div class="container narrow">
         <h2>Publications</h2>
-        <p>
-          For a complete and up-to-date publication list, please visit my
-          <a href="https://scholar.google.com/citations?user=pzZN6xsAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar profile</a>.
+        <p class="hint">
+          Full list: <a href="https://scholar.google.com/citations?user=pzZN6xsAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>.
         </p>
-        <p>
-          I can also help turn this into a curated publication section later,
-          with selected papers, authors, venues, PDF links, and code links.
-        </p>
+        <div class="pub-list">
+          <article class="pub">
+            <h3 class="pub-title">[Paper Title]</h3>
+            <p class="pub-authors"><strong>Shaqi Luo</strong>, Coauthor A, Coauthor B</p>
+            <p class="pub-venue">Conference / Journal · 2026</p>
+            <div class="pub-links">
+              <a class="btn" href="#" aria-disabled="true">paper</a>
+              <a class="btn" href="#" aria-disabled="true">project</a>
+              <a class="btn" href="#" aria-disabled="true">code</a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="section">
       <div class="container narrow">
-        <h2>Links</h2>
+        <h2>Contact</h2>
         <ul class="contact-list">
           <li><span>Institution</span><strong>Beijing Academy of Artificial Intelligence (BAAI)</strong></li>
+          <li><span>Email</span><a href="mailto:luoshaqi@baai.ac.cn">luoshaqi@baai.ac.cn</a></li>
           <li><span>Google Scholar</span><a href="https://scholar.google.com/citations?user=pzZN6xsAAAAJ&hl=zh-CN" target="_blank" rel="noopener">scholar profile</a></li>
           <li><span>GitHub</span><a href="https://github.com/luoshaqi" target="_blank" rel="noopener">github.com/luoshaqi</a></li>
         </ul>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container narrow">
+      <p>© <span id="year"></span> Shaqi Luo</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
