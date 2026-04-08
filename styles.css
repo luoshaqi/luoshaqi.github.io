@@ -218,6 +218,12 @@ h2 {
 
 .pub-venue { margin-top: 4px; }
 
+.pub-note {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
 .pub-links {
   display: flex;
   flex-wrap: wrap;
