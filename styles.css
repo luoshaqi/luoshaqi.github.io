@@ -199,7 +199,7 @@ h2 {
 
 .pub {
   display: grid;
-  grid-template-columns: 170px 1fr;
+  grid-template-columns: clamp(220px, 26vw, 320px) 1fr;
   gap: 16px;
   padding: 18px 18px 16px;
   background: var(--surface);
