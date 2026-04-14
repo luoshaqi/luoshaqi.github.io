@@ -205,6 +205,7 @@ h2 {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 16px;
+  align-items: start;
 }
 
 .pub-body {
@@ -223,6 +224,7 @@ h2 {
     linear-gradient(180deg, #ffffff 0%, #f6f8fc 100%);
   color: var(--text);
   position: relative;
+  align-self: start;
 }
 
 .pub-media:hover {
