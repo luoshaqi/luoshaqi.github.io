@@ -7,7 +7,7 @@
   --accent: #1f4b99;
   --accent-soft: #eaf0fb;
   --shadow: 0 10px 30px rgba(18, 29, 55, 0.08);
-  --max: 960px;
+  --max: 1280px;
 }
 
 * { box-sizing: border-box; }
