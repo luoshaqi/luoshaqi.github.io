@@ -171,14 +171,14 @@ h2 {
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 14px;
+  gap: 4px;
 }
 
 .timeline li {
   display: grid;
   grid-template-columns: 120px 1fr;
-  gap: 16px;
-  padding: 14px 16px;
+  gap: 10px;
+  padding: 6px 10px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -188,9 +188,15 @@ h2 {
   color: var(--muted);
   font-weight: 700;
   letter-spacing: 0.02em;
+  line-height: 1.25;
+  font-size: 0.95rem;
 }
 
-.event { color: var(--text); }
+.event {
+  color: var(--text);
+  line-height: 1.25;
+  font-size: 0.98rem;
+}
 
 .pub-list {
   display: grid;
@@ -206,6 +212,10 @@ h2 {
   border: 1px solid var(--line);
   border-radius: 16px;
   align-items: start;
+}
+
+.pub.pub-no-media {
+  grid-template-columns: 1fr;
 }
 
 .pub-body {
