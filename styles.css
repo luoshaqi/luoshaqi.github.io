@@ -216,6 +216,7 @@ h2 {
   border-radius: 14px;
   border: 1px solid var(--line);
   overflow: hidden;
+  aspect-ratio: 16 / 9;
   background:
     radial-gradient(1200px 400px at 10% 0%, rgba(31, 75, 153, 0.14) 0%, rgba(31, 75, 153, 0) 60%),
     radial-gradient(900px 300px at 90% 30%, rgba(72, 175, 239, 0.18) 0%, rgba(72, 175, 239, 0) 55%),
@@ -230,13 +231,13 @@ h2 {
 }
 
 .pub-media-inner {
-  height: 110px;
+  position: absolute;
+  inset: auto 0 0 0;
   padding: 12px 12px 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   gap: 8px;
-  position: relative;
   z-index: 2;
 }
 
@@ -252,6 +253,8 @@ h2 {
   object-fit: cover;
   z-index: 1;
   filter: saturate(1.05) contrast(1.05);
+  display: block;
+  pointer-events: none;
 }
 
 .pub-media-video::after {
@@ -398,9 +401,6 @@ h2 {
   }
   .pub {
     grid-template-columns: 1fr;
-  }
-  .pub-media-inner {
-    height: 120px;
   }
   .contact-list li {
     grid-template-columns: 1fr;
