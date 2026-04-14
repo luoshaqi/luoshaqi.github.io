@@ -221,6 +221,7 @@ h2 {
     radial-gradient(900px 300px at 90% 30%, rgba(72, 175, 239, 0.18) 0%, rgba(72, 175, 239, 0) 55%),
     linear-gradient(180deg, #ffffff 0%, #f6f8fc 100%);
   color: var(--text);
+  position: relative;
 }
 
 .pub-media:hover {
@@ -235,6 +236,40 @@ h2 {
   flex-direction: column;
   justify-content: flex-end;
   gap: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.pub-media-video {
+  background: #000;
+}
+
+.pub-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: saturate(1.05) contrast(1.05);
+}
+
+.pub-media-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.50) 100%);
+  z-index: 1;
+}
+
+.pub-media-video .pub-media-tag,
+.pub-media-video .pub-media-title {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.pub-media-video .pub-media-tag {
+  background: rgba(0, 0, 0, 0.35);
+  border-color: rgba(255, 255, 255, 0.22);
 }
 
 .pub-media-tag {
