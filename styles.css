@@ -247,6 +247,20 @@ h2 {
   background: #000;
 }
 
+.pub-media-image {
+  background: #000;
+}
+
+.pub-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  display: block;
+}
+
 .pub-video {
   position: absolute;
   inset: 0;
