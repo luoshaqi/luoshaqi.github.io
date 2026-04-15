@@ -133,6 +133,10 @@ h1 span {
   margin-top: 28px;
 }
 
+.hero .links {
+  margin-top: 22px;
+}
+
 .pill {
   display: inline-flex;
   align-items: center;
