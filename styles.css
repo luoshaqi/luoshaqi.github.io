@@ -37,8 +37,31 @@ a:hover { text-decoration: underline; }
 .narrow { max-width: 760px; }
 
 .site-header {
-  background: linear-gradient(180deg, #ffffff 0%, #f4f7fb 100%);
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
   border-bottom: 1px solid var(--line);
+  background-color: #0b1220;
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.78) 42%, rgba(255, 255, 255, 0.62) 100%),
+    url("assets/hero-bg.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: top, center;
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(900px 420px at 50% 18%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 62%);
+}
+
+.site-header > .container {
+  position: relative;
+  z-index: 1;
 }
 
 .topbar {
@@ -47,6 +70,13 @@ a:hover { text-decoration: underline; }
   justify-content: space-between;
   gap: 16px;
   padding: 18px 0;
+  margin: 0 -10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(217, 222, 232, 0.75);
+  backdrop-filter: blur(10px);
 }
 
 .brand a {
@@ -76,6 +106,21 @@ a:hover { text-decoration: underline; }
 
 .hero {
   padding: 64px 0 72px;
+}
+
+.hero-text {
+  padding: 18px 18px 6px;
+  margin: 0 -10px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(217, 222, 232, 0.75);
+  backdrop-filter: blur(10px);
+}
+
+.hero-headline,
+.hero-text h1,
+.hero-text .eyebrow {
+  text-shadow: 0 1px 18px rgba(255, 255, 255, 0.85);
 }
 
 .eyebrow {
