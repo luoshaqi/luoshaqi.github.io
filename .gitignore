@@ -1,1 +1,4 @@
 .DS_Store
+
+# Camera master — keep only on your machine; regenerate hero-bg.png locally when needed
+assets/hero-bg-original.heic
