@@ -41,27 +41,33 @@ a:hover { text-decoration: underline; }
   isolation: isolate;
   overflow: clip;
   border-bottom: 1px solid var(--line);
-  background-color: #0b1220;
-  background-image:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.78) 42%, rgba(255, 255, 255, 0.62) 100%),
-    url("assets/hero-bg.png");
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
-  background-position: top, center;
+  background-color: var(--bg);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto;
 }
 
-.site-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
+/* Full-bleed photo at intrinsic aspect ratio (width 100%, height auto). 10% transparent ≈ opacity 0.9 */
+.site-header-bg-img {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
   pointer-events: none;
-  z-index: 0;
-  background: radial-gradient(900px 420px at 50% 18%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 62%);
+  user-select: none;
+  display: block;
 }
 
 .site-header > .container {
+  grid-column: 1 / -1;
+  grid-row: 1;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: min(var(--max), calc(100% - 40px));
+  justify-self: center;
 }
 
 .topbar {
