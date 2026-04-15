@@ -111,24 +111,31 @@ a:hover { text-decoration: underline; }
 }
 
 .hero {
-  padding: 64px 0 44px;
+  padding: 64px 0 48px;
 }
 
-.hero-layout {
+.hero-panel {
+  margin: 0 -10px;
+  padding: 18px 18px 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(217, 222, 232, 0.75);
+  backdrop-filter: blur(10px);
+}
+
+.hero-panel-main {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   align-items: flex-start;
-  margin: 0 -10px;
 }
 
 .hero-avatar {
   display: block;
-  width: clamp(140px, 26vw, 220px);
+  width: clamp(120px, 22vw, 200px);
   height: auto;
-  border-radius: 18px;
-  border: 1px solid rgba(217, 222, 232, 0.75);
-  box-shadow: var(--shadow);
+  border-radius: 14px;
+  border: 1px solid rgba(217, 222, 232, 0.65);
   object-fit: cover;
   aspect-ratio: 1;
   flex: 0 0 auto;
@@ -137,12 +144,11 @@ a:hover { text-decoration: underline; }
 .hero-text {
   flex: 1 1 260px;
   min-width: 0;
-  padding: 18px 18px 6px;
   margin: 0;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(217, 222, 232, 0.75);
-  backdrop-filter: blur(10px);
+  padding: 0;
+  background: none;
+  border: none;
+  backdrop-filter: none;
 }
 
 .hero-headline,
@@ -151,31 +157,27 @@ a:hover { text-decoration: underline; }
   text-shadow: 0 1px 18px rgba(255, 255, 255, 0.85);
 }
 
-.about-hero.section {
-  padding: 0 0 72px;
+.hero-panel-about {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(217, 222, 232, 0.85);
 }
 
-.about-panel {
-  padding: 18px 18px 16px;
-  margin: 0 -10px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(217, 222, 232, 0.75);
-  backdrop-filter: blur(10px);
-}
-
-.about-panel h2 {
+.hero-panel-about h2 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
   text-shadow: 0 1px 18px rgba(255, 255, 255, 0.85);
 }
 
-.about-panel p {
+.hero-panel-about p {
   margin: 0;
   color: var(--muted);
-  line-height: 1.75;
+  line-height: 1.65;
 }
 
-.about-panel p + p {
-  margin-top: 12px;
+.hero-panel-about p + p {
+  margin-top: 10px;
 }
 
 .eyebrow {
@@ -540,13 +542,14 @@ h2 {
 @media (max-width: 640px) {
   .topbar { padding: 14px 0; }
   .nav { justify-content: flex-start; }
-  .hero { padding: 46px 0 56px; }
-  .hero-layout {
+  .hero { padding: 46px 0 40px; }
+  .hero-panel-main {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
   .hero-text { text-align: center; }
+  .hero-panel-about { text-align: left; }
   .hero .links { justify-content: center; }
   .section { padding: 48px 0; }
   .timeline li {
