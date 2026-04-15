@@ -70,6 +70,10 @@ a:hover { text-decoration: underline; }
   justify-self: center;
 }
 
+.site-header--no-hero-bg .site-header-bg-img {
+  display: none;
+}
+
 .topbar {
   display: flex;
   align-items: center;
