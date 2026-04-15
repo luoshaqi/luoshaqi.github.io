@@ -151,23 +151,36 @@ a:hover { text-decoration: underline; }
   backdrop-filter: none;
 }
 
+.hero-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px 20px;
+}
+
+.hero-title-row h1 {
+  flex: 1 1 200px;
+  min-width: 0;
+  margin: 0;
+}
+
+.hero-links {
+  margin-top: 0;
+  flex: 0 1 auto;
+  justify-content: flex-end;
+  align-self: flex-start;
+}
+
 .hero-headline,
-.hero-text h1,
-.hero-text .eyebrow {
+.hero-text h1 {
   text-shadow: 0 1px 18px rgba(255, 255, 255, 0.85);
 }
 
 .hero-panel-about {
-  margin-top: 16px;
-  padding-top: 16px;
+  margin-top: 14px;
+  padding-top: 14px;
   border-top: 1px solid rgba(217, 222, 232, 0.85);
-}
-
-.hero-panel-about h2 {
-  margin: 0 0 10px;
-  font-size: 1.2rem;
-  letter-spacing: -0.02em;
-  text-shadow: 0 1px 18px rgba(255, 255, 255, 0.85);
 }
 
 .hero-panel-about p {
@@ -211,7 +224,7 @@ h1 span {
 }
 
 .hero-headline {
-  margin: 18px 0 0;
+  margin: 14px 0 0;
   max-width: none;
   font-size: clamp(1.15rem, 2.2vw, 1.45rem);
   line-height: 1.45;
@@ -235,9 +248,6 @@ h1 span {
   margin-top: 28px;
 }
 
-.hero .links {
-  margin-top: 22px;
-}
 
 .pill {
   display: inline-flex;
@@ -549,8 +559,20 @@ h2 {
     text-align: center;
   }
   .hero-text { text-align: center; }
+  .hero-title-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-title-row h1 {
+    flex: none;
+    text-align: center;
+  }
+  .hero-links {
+    width: 100%;
+    justify-content: flex-end;
+    align-self: stretch;
+  }
   .hero-panel-about { text-align: left; }
-  .hero .links { justify-content: center; }
   .section { padding: 48px 0; }
   .timeline li {
     grid-template-columns: 1fr;
