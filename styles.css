@@ -103,7 +103,7 @@ h1 span {
 
 .subtitle {
   margin: 22px 0 0;
-  max-width: 760px;
+  max-width: none;
   font-size: 1.08rem;
   color: var(--muted);
 }
