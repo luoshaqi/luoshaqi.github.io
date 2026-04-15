@@ -114,9 +114,31 @@ a:hover { text-decoration: underline; }
   padding: 64px 0 44px;
 }
 
-.hero-text {
-  padding: 18px 18px 6px;
+.hero-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
   margin: 0 -10px;
+}
+
+.hero-avatar {
+  display: block;
+  width: clamp(140px, 26vw, 220px);
+  height: auto;
+  border-radius: 18px;
+  border: 1px solid rgba(217, 222, 232, 0.75);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  aspect-ratio: 1;
+  flex: 0 0 auto;
+}
+
+.hero-text {
+  flex: 1 1 260px;
+  min-width: 0;
+  padding: 18px 18px 6px;
+  margin: 0;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.62);
   border: 1px solid rgba(217, 222, 232, 0.75);
@@ -519,6 +541,13 @@ h2 {
   .topbar { padding: 14px 0; }
   .nav { justify-content: flex-start; }
   .hero { padding: 46px 0 56px; }
+  .hero-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-text { text-align: center; }
+  .hero .links { justify-content: center; }
   .section { padding: 48px 0; }
   .timeline li {
     grid-template-columns: 1fr;
