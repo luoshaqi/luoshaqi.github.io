@@ -108,6 +108,24 @@ h1 span {
   color: var(--muted);
 }
 
+.hero-headline {
+  margin: 18px 0 0;
+  max-width: 980px;
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  line-height: 1.45;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.subtitle + .subtitle {
+  margin-top: 14px;
+}
+
+.subtitle a {
+  font-weight: 650;
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
