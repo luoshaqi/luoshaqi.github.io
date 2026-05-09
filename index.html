@@ -23,6 +23,7 @@
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#news">News</a>
+          <a href="#engineering">Engineering</a>
           <a href="#selected">Selected</a>
           <a href="#publications">Publications</a>
           <a href="#contact">Contact</a>
@@ -400,6 +401,146 @@
             </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section id="engineering" class="section">
+      <div class="container">
+        <h2>Engineering Highlights</h2>
+        <article class="engineering-feature">
+          <div class="engineering-media">
+            <div class="engineering-video-block">
+              <video class="engineering-video" autoplay muted loop playsinline controls preload="metadata">
+                <source src="assets/medical-ultrasound-cctv.mp4" type="video/mp4" />
+              </video>
+              <p class="engineering-caption">CCTV-2 coverage from the 2024 World Robot Conference, featuring the robotic ultrasound system.</p>
+            </div>
+            <div class="engineering-video-block">
+              <video class="engineering-video" autoplay muted loop playsinline controls preload="metadata">
+                <source src="assets/medical-ultrasound-lab-demo.mov" />
+              </video>
+              <p class="engineering-caption">Additional lab demonstration of the autonomous ultrasound scanning platform.</p>
+            </div>
+          </div>
+          <div class="engineering-body">
+            <p class="eyebrow">Embodied AI for Medical Robotics</p>
+            <h3>World-first cardiac ultrasound scanning robot</h3>
+            <p>
+              This was my first project after completing my PhD. Working with colleagues, we built and integrated the engineering backbone that moved the system from lab prototypes toward real-world medical robotics demonstrations. My main contributions included:
+            </p>
+            <div class="engineering-points">
+              <div>
+                <span>Robot-free data acquisition</span>
+                <p>Built data collection workflows for ultrasound probe guidance and human-robot interaction data.</p>
+              </div>
+              <div>
+                <span>Human-friendly compliant control</span>
+                <p>Developed safe, intention-aware interaction and compliant control for contact-rich ultrasound scanning.</p>
+              </div>
+              <div>
+                <span>Full-system deployment</span>
+                <p>Handled real-robot debugging, structural design, cross-arm deployment, and touchscreen interaction UI.</p>
+              </div>
+              <div>
+                <span>Model and system integration</span>
+                <p>Contributed to parts of model training, deployment, evaluation, and the end-to-end experimental pipeline.</p>
+              </div>
+            </div>
+            <div class="related-works">
+              <span>Related research outputs; see <a href="#selected">Selected Works</a> for details</span>
+              <ul>
+                <li>Vision-based detection and real-time adaptive control schemes for autonomous ultrasound scanning robots · ICARM 2024</li>
+                <li>A unified interaction control framework for safe robotic ultrasound scanning with human-intention-aware compliance · IROS 2024</li>
+                <li>Cardiac Copilot: Automatic probe guidance for echocardiography with world model · MICCAI 2024</li>
+                <li>Towards expert-level autonomous carotid ultrasonography with large-scale learning-based robotic system · Nature Communications 2025</li>
+                <li>UltraSeP: Sequence-aware pre-training for echocardiography probe movement guidance · Pattern Recognition 2025</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="engineering-feature">
+          <div class="engineering-media">
+            <div class="engineering-video-block">
+              <video class="engineering-video" autoplay muted loop playsinline controls preload="metadata">
+                <source src="assets/hydraulic-manipulator-platform.mov" />
+              </video>
+              <p class="engineering-caption">Hydraulic manipulator platform developed during my PhD, later extended toward a dual-arm heavy-duty hydraulic robot.</p>
+            </div>
+          </div>
+          <div class="engineering-body">
+            <p class="eyebrow">Hydraulic Manipulation and Shared Control</p>
+            <h3>Heavy-duty hydraulic teleoperation platform</h3>
+            <p>
+              Since 2018, I worked on a hydraulic manipulator platform from its early structural design stage through electrical control, low-level servo tuning, kinematics, teleoperation data collection, and shared-control research. The platform later evolved into a dual-arm heavy-duty hydraulic robot deployed at the State Key Laboratory of Fluid Power and Mechatronic Systems, Zhejiang University.
+            </p>
+            <div class="engineering-points">
+              <div>
+                <span>Electrical and control system</span>
+                <p>Independently designed, selected, integrated, and debugged the electrical control stack for hydraulic actuation.</p>
+              </div>
+              <div>
+                <span>Hydraulic servo tuning</span>
+                <p>Tuned low-level PID loops and controller parameters across valves, sensors, and hydraulic modules.</p>
+              </div>
+              <div>
+                <span>Kinematics and teleoperation</span>
+                <p>Implemented forward/inverse kinematics and connected the teleoperation data acquisition pipeline.</p>
+              </div>
+              <div>
+                <span>Shared-control research</span>
+                <p>Proposed shared control to improve teleoperation efficiency and safety while reducing operator cognitive load.</p>
+              </div>
+            </div>
+            <p class="engineering-note">
+              Unlike modern electric manipulators, which often rely on highly integrated joint modules with built-in sensing, power electronics, communication, and low-level control interfaces, hydraulic manipulators require system-level integration across the entire actuation chain. Sensors, servo valves, hydraulic power supplies, electronic controllers, and servo loops must be co-designed and carefully tuned, making the final robot behavior a result of the coupled dynamics of the whole hydraulic system rather than an encapsulated joint module.
+            </p>
+            <div class="related-works">
+              <span>Related research outputs; see <a href="#selected">Selected Works</a> for details</span>
+              <ul>
+                <li>Human-Robot Shared Control Based on Locally Weighted Intent Prediction for a Teleoperated Hydraulic Manipulator System · IEEE/ASME Transactions on Mechatronics 2022</li>
+                <li>Dynamic impact of hydraulic systems using pressure feedback for active damping · Applied Mathematical Modelling 2021</li>
+                <li>Smooth trajectory learning of teleoperated hydraulic manipulator with motion noise cancellation · Frontiers of Mechanical Engineering 2025</li>
+                <li>Dynamic analysis and improvement of the electrohydraulic system under power limitation control · IEEE Access 2019</li>
+                <li>Comparison of acceleration control and pressure feedback for active damping improvement of hydraulic manipulators · AIM 2019</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="engineering-feature">
+          <div class="engineering-media">
+            <div class="engineering-video-block">
+              <video class="engineering-video" autoplay muted loop playsinline controls preload="metadata">
+                <source src="assets/freescale-smart-car.mov" />
+              </video>
+              <p class="engineering-caption">Undergraduate Freescale smart car competition project, awarded First Prize in the Western China regional contest.</p>
+            </div>
+          </div>
+          <div class="engineering-body">
+            <p class="eyebrow">Undergraduate Embedded Robotics</p>
+            <h3>Freescale smart car competition</h3>
+            <p>
+              Around 2015, I participated in the Freescale smart car competition during my undergraduate study and won First Prize in the Western China regional contest. My main responsibilities covered structural design, embedded electronics, and controller development, giving me an early full-stack engineering foundation before my later work on hydraulic and medical robotic systems.
+            </p>
+            <div class="engineering-points">
+              <div>
+                <span>Structural design</span>
+                <p>Worked on the mechanical layout, chassis integration, sensor placement, and competition-oriented reliability.</p>
+              </div>
+              <div>
+                <span>Embedded electronics</span>
+                <p>Designed and fabricated the motor driver board and main control board myself in Altium Designer, then completed hardware integration and debugging.</p>
+              </div>
+              <div>
+                <span>Controller development</span>
+                <p>Developed and tuned low-level control logic for stable, fast, and repeatable vehicle motion.</p>
+              </div>
+              <div>
+                <span>Competition deployment</span>
+                <p>Iterated the full system under real contest constraints, balancing speed, robustness, and maintainability.</p>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
