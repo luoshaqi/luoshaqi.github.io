@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260604" />
+  <link rel="stylesheet" href="styles.css?v=20260712" />
 </head>
 <body>
   <!-- Remove class site-header--no-hero-bg to show header panorama again -->
@@ -48,7 +48,7 @@
           </div>
           <div id="about" class="hero-panel-about">
             <p>
-              Researcher at BAAI working on embodied intelligence. Our long-term vision is to build robots that can truly interact with the physical world — a vision we refer to as AETHER: Agile Embodied inTelligence for Humanoid-Environment InteRaction.
+              I received my Ph.D. in Mechatronic Engineering from Chongqing University and am currently a researcher at BAAI working on embodied intelligence. Our long-term vision is to build robots that can truly interact with the physical world — a vision we refer to as AETHER: Agile Embodied inTelligence for Humanoid-Environment InteRaction.
             </p>
             <p>
               We are hiring both on-site and remote research interns, as well as full-time researchers and engineers, across embodied AI topics ranging from <strong>WBC</strong> to <strong>VLA</strong>. If you are highly self-motivated and deeply passionate about robotics, please feel free to <a href="#contact"><strong>contact me</strong></a>.
@@ -101,6 +101,230 @@
             <span class="event">Published in Pattern Recognition on sequence-aware pre-training for echocardiography probe guidance.</span>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section id="research-map" class="section" hidden>
+      <div class="container">
+        <h2>Research Map</h2>
+        <p class="hint">AETHER research map from data collection to System 2/1/0, with tabletop/manipulator work on top and humanoid work below.</p>
+        <div class="research-map-scroll" aria-label="Scrollable research map">
+          <figure class="research-map research-atlas" aria-label="AETHER research map from data collection to System 2, System 1, and System 0">
+            <div class="atlas-title">
+              <strong>AETHER 研究图谱 / AETHER Research Map</strong>
+              <span>从数据采集到 System 2/1/0 · Top: Tabletop | Bottom: Humanoid</span>
+            </div>
+
+            <svg class="atlas-links" viewBox="0 0 1420 880" aria-hidden="true" focusable="false">
+              <defs>
+                <marker id="atlas-arrow-blue" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                  <path d="M0,0 L10,5 L0,10 Z" fill="#1d59c8"></path>
+                </marker>
+                <marker id="atlas-arrow-green" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                  <path d="M0,0 L10,5 L0,10 Z" fill="#2e8b3c"></path>
+                </marker>
+                <marker id="atlas-arrow-purple" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                  <path d="M0,0 L10,5 L0,10 Z" fill="#7240b9"></path>
+                </marker>
+              </defs>
+              <path class="atlas-link atlas-link-blue" marker-end="url(#atlas-arrow-blue)" d="M450 196 H493"></path>
+              <path class="atlas-link atlas-link-blue" marker-end="url(#atlas-arrow-blue)" d="M450 270 H493"></path>
+              <path class="atlas-link atlas-link-blue" marker-end="url(#atlas-arrow-blue)" d="M450 344 H493"></path>
+              <path class="atlas-link atlas-link-blue" marker-end="url(#atlas-arrow-blue)" d="M764 230 C792 230 792 232 810 232"></path>
+              <path class="atlas-link atlas-link-blue" marker-end="url(#atlas-arrow-blue)" d="M764 338 C792 338 792 305 810 305"></path>
+              <path class="atlas-link atlas-link-green" marker-end="url(#atlas-arrow-green)" d="M1095 196 H1128"></path>
+              <path class="atlas-link atlas-link-green" marker-end="url(#atlas-arrow-green)" d="M1095 270 H1128"></path>
+              <path class="atlas-link atlas-link-green" marker-end="url(#atlas-arrow-green)" d="M1095 344 H1128"></path>
+
+              <path class="atlas-link atlas-link-blue" marker-end="url(#atlas-arrow-blue)" d="M450 458 H493"></path>
+              <path class="atlas-link atlas-link-blue" marker-end="url(#atlas-arrow-blue)" d="M450 517 H493"></path>
+              <path class="atlas-link atlas-link-blue" marker-end="url(#atlas-arrow-blue)" d="M450 576 H493"></path>
+              <path class="atlas-link atlas-link-blue" marker-end="url(#atlas-arrow-blue)" d="M450 635 H493"></path>
+              <path class="atlas-link atlas-link-blue" marker-end="url(#atlas-arrow-blue)" d="M764 462 C790 462 790 454 810 454"></path>
+              <path class="atlas-link atlas-link-blue" marker-end="url(#atlas-arrow-blue)" d="M764 554 C790 554 790 518 810 518"></path>
+              <path class="atlas-link atlas-link-blue" marker-end="url(#atlas-arrow-blue)" d="M764 642 C790 642 790 633 810 633"></path>
+              <path class="atlas-link atlas-link-green" marker-end="url(#atlas-arrow-green)" d="M1095 458 H1128"></path>
+              <path class="atlas-link atlas-link-green" marker-end="url(#atlas-arrow-green)" d="M1095 520 H1128"></path>
+              <path class="atlas-link atlas-link-green" marker-end="url(#atlas-arrow-green)" d="M1095 582 H1128"></path>
+              <path class="atlas-link atlas-link-purple" marker-end="url(#atlas-arrow-purple)" d="M1095 642 H1128"></path>
+            </svg>
+
+            <div class="atlas-stage atlas-stage-data">
+              <span class="atlas-stage-number">1</span>
+              <span><strong>数据采集 / Benchmark</strong><em>Data Collection / Benchmark</em></span>
+            </div>
+            <div class="atlas-stage atlas-stage-system2">
+              <span class="atlas-stage-number">2</span>
+              <span><strong>System 2 推理与规划</strong><em>Reasoning &amp; Planning</em></span>
+            </div>
+            <div class="atlas-stage atlas-stage-system1">
+              <span class="atlas-stage-number">3</span>
+              <span><strong>System 1 策略与模型</strong><em>Policy &amp; Model</em></span>
+            </div>
+            <div class="atlas-stage atlas-stage-system0">
+              <span class="atlas-stage-number">4</span>
+              <span><strong>System 0 控制执行</strong><em>Low-level Control &amp; Execution</em></span>
+            </div>
+
+            <div class="atlas-lane atlas-lane-tabletop">
+              <span class="atlas-lane-icon atlas-lane-icon-arm" aria-hidden="true"></span>
+              <strong>TABLETOP /</strong>
+              <span>桌面操作</span>
+            </div>
+            <div class="atlas-lane atlas-lane-humanoid">
+              <span class="atlas-lane-icon atlas-lane-icon-human" aria-hidden="true"></span>
+              <strong>HUMANOID /</strong>
+              <span>人形全身交互</span>
+            </div>
+
+            <a class="atlas-item atlas-item-data atlas-pos atlas-pos-omni" href="https://baai-aether.github.io/OmniUMI/" target="_blank" rel="noopener">
+              <img src="assets/omniumi-map-poster.png" alt="OmniUMI preview" loading="lazy">
+              <span><strong>OmniUMI</strong><em>multimodal robot learning interface</em><b>camera · tactile · audio · force</b></span>
+            </a>
+            <a class="atlas-item atlas-item-data atlas-pos atlas-pos-egodex" href="https://baai-aether.github.io/OmniUMI/" target="_blank" rel="noopener">
+              <img src="assets/iros-map-poster.png" alt="EgoDexUMI preview" loading="lazy">
+              <span><strong>egoDexUMI</strong><em>dexterous / tabletop UMI-style collection</em><b>camera · hand · wrist · force</b></span>
+            </a>
+            <a class="atlas-item atlas-item-data atlas-pos atlas-pos-ultrasound-data" href="#engineering">
+              <img src="assets/ultrabot-map-poster.png" alt="Ultrasound robot preview" loading="lazy">
+              <span><strong>Ultrasound robot</strong><em>data collection and interaction logs</em><b>probe · image · force · intent</b></span>
+            </a>
+
+            <div class="atlas-card atlas-card-blue atlas-pos atlas-pos-copilot">
+              <span class="atlas-symbol atlas-symbol-world" aria-hidden="true"></span>
+              <span><strong>Cardiac Copilot</strong><em>world model for probe guidance</em></span>
+            </div>
+            <div class="atlas-card atlas-card-blue atlas-pos atlas-pos-tabletop-wam">
+              <span class="atlas-symbol atlas-symbol-tree" aria-hidden="true"></span>
+              <span><strong>Tabletop WAM / Task Planning</strong><em>long-horizon reasoning and planning</em></span>
+            </div>
+
+            <div class="atlas-card atlas-card-green atlas-pos atlas-pos-force-vla">
+              <img src="assets/omniumi-map-poster.png" alt="" loading="lazy">
+              <span><strong>Force-aware VLA / policy learning</strong><em>force and tactile-aware skills</em><b>force · tactile · VLA</b></span>
+            </div>
+            <div class="atlas-card atlas-card-green atlas-pos atlas-pos-ultrasep">
+              <span class="atlas-symbol atlas-symbol-sequence" aria-hidden="true"></span>
+              <span><strong>UltraSeP</strong><em>sequence-aware pretraining</em><b>sequence · pretrain</b></span>
+            </div>
+            <div class="atlas-card atlas-card-green atlas-pos atlas-pos-policy">
+              <img src="assets/ultrabot-map-poster.png" alt="" loading="lazy">
+              <span><strong>OmniUMI policy / multimodal action modeling</strong><em>robot skills from aligned interaction data</em><b>multimodal · action</b></span>
+            </div>
+
+            <div class="atlas-card atlas-card-purple atlas-pos atlas-pos-hybrid">
+              <span class="atlas-symbol atlas-symbol-wave" aria-hidden="true"></span>
+              <span><strong>Hybrid compliant control</strong><em>force-aware compliance</em><b>force · compliance</b></span>
+            </div>
+            <div class="atlas-card atlas-card-purple atlas-pos atlas-pos-fixture">
+              <span class="atlas-symbol atlas-symbol-fixture" aria-hidden="true"></span>
+              <span><strong>Adaptive Virtual Fixture / Comanipulation</strong><em>shared-control safety</em><b>force · safety</b></span>
+            </div>
+            <div class="atlas-card atlas-card-purple atlas-pos atlas-pos-autous">
+              <img src="assets/ultrabot-map-poster.png" alt="" loading="lazy">
+              <span><strong>Autonomous ultrasound interaction control</strong><em>safe robot scanning deployment</em><b>ultrasound · autonomy</b></span>
+            </div>
+            <div class="atlas-card atlas-card-purple atlas-pos atlas-pos-hydraulic0">
+              <img src="assets/hydraulic-map-poster.png" alt="" loading="lazy">
+              <span><strong>Hydraulic shared control / low-level deployment</strong><em>servo tuning and robust execution</em><b>wbc · deployment</b></span>
+            </div>
+
+            <a class="atlas-item atlas-item-data atlas-pos atlas-pos-bifrost" href="https://baai-aether.github.io/BifrostUMI/" target="_blank" rel="noopener">
+              <img src="assets/bifrostumi-map-poster.png" alt="BifrostUMI preview" loading="lazy">
+              <span><strong>BifrostUMI</strong><em>robot-free whole-body demonstrations</em><b>camera · pose · force</b></span>
+            </a>
+            <a class="atlas-item atlas-item-data atlas-pos atlas-pos-wholebody" href="https://baai-aether.github.io/BifrostUMI/" target="_blank" rel="noopener">
+              <img src="assets/thor2-map-poster.png" alt="WholeBodyUMI preview" loading="lazy">
+              <span><strong>WholeBodyUMI</strong><em>humanoid full-body interaction data</em><b>pose · contact · intent</b></span>
+            </a>
+            <a class="atlas-item atlas-item-data atlas-pos atlas-pos-mocap" href="#selected">
+              <img src="assets/thor2-map-poster.png" alt="ForceMoCap preview" loading="lazy">
+              <span><strong>ForceMoCap</strong><em>force-aware motion capture</em><b>motion · force · contact</b></span>
+            </a>
+            <a class="atlas-item atlas-item-data atlas-pos atlas-pos-arena" href="https://arxiv.org/abs/2607.06052" target="_blank" rel="noopener">
+              <img src="assets/thorarena-cover.png" alt="ThorArena preview" loading="lazy">
+              <span><strong>ThorArena</strong><em>force-aware humanoid interaction benchmark</em><b>motion · force · FATS</b></span>
+            </a>
+
+            <div class="atlas-card atlas-card-blue atlas-pos atlas-pos-humanoid-wam">
+              <span class="atlas-symbol atlas-symbol-world" aria-hidden="true"></span>
+              <span><strong>Humanoid WAM</strong><em>world model for embodied reasoning</em></span>
+            </div>
+            <div class="atlas-card atlas-card-blue atlas-pos atlas-pos-long-horizon">
+              <span class="atlas-symbol atlas-symbol-run" aria-hidden="true"></span>
+              <span><strong>Long-horizon whole-body planning</strong><em>cost and reward planning</em></span>
+            </div>
+            <div class="atlas-card atlas-card-blue atlas-pos atlas-pos-task-decomp">
+              <span class="atlas-symbol atlas-symbol-tree" aria-hidden="true"></span>
+              <span><strong>Task decomposition / reasoning</strong><em>hierarchical objectives and constraints</em></span>
+            </div>
+
+            <div class="atlas-card atlas-card-green atlas-pos atlas-pos-bifrost-policy">
+              <span class="atlas-symbol atlas-symbol-skeleton" aria-hidden="true"></span>
+              <span><strong>BifrostUMI policy / sparse keypoint learning</strong><em>keypoint-conditioned humanoid skills</em><b>sparse · policy · keypoint</b></span>
+            </div>
+            <div class="atlas-card atlas-card-green atlas-pos atlas-pos-interactive-vla">
+              <span class="atlas-symbol atlas-symbol-human" aria-hidden="true"></span>
+              <span><strong>Interactive VLA / Force-aware VLA</strong><em>language and contact-grounded behavior</em><b>VLA · force · interactive</b></span>
+            </div>
+            <div class="atlas-card atlas-card-green atlas-pos atlas-pos-skill-predict">
+              <span class="atlas-symbol atlas-symbol-run" aria-hidden="true"></span>
+              <span><strong>Whole-body skill prediction</strong><em>anticipating executable reactions</em><b>skill · prediction</b></span>
+            </div>
+            <div class="atlas-card atlas-card-green atlas-pos atlas-pos-contact">
+              <span class="atlas-symbol atlas-symbol-contact" aria-hidden="true"></span>
+              <span><strong>Contact / force prediction</strong><em>interaction-aware dynamics</em><b>force · contact · prediction</b></span>
+            </div>
+
+            <div class="atlas-card atlas-card-purple atlas-pos atlas-pos-thor1">
+              <img src="assets/thor2-map-poster.png" alt="" loading="lazy">
+              <span><strong>THOR1</strong><em>humanoid execution system</em><b>algorithm · robot</b></span>
+            </div>
+            <div class="atlas-card atlas-card-purple atlas-pos atlas-pos-thor2">
+              <img src="assets/thor2-map-poster.png" alt="" loading="lazy">
+              <span><strong>THOR2</strong><em>next-gen humanoid deployment</em><b>agile · tracking</b></span>
+            </div>
+            <div class="atlas-card atlas-card-purple atlas-pos atlas-pos-gmt">
+              <span class="atlas-symbol atlas-symbol-skeleton" aria-hidden="true"></span>
+              <span><strong>GMT / whole-body control</strong><em>general motion tracking</em><b>wbc · whole-body</b></span>
+            </div>
+            <div class="atlas-card atlas-card-purple atlas-pos atlas-pos-force-wbc">
+              <img src="assets/bifrostumi-map-poster.png" alt="" loading="lazy">
+              <span><strong>Force-aware WBC</strong><em>contact-rich full-body execution</em><b>force · wbc</b></span>
+            </div>
+            <div class="atlas-card atlas-card-purple atlas-pos atlas-pos-reflex">
+              <span class="atlas-symbol atlas-symbol-shield" aria-hidden="true"></span>
+              <span><strong>Balance / contact handling / safety reflex</strong><em>reactive stability under interaction</em><b>safety · reflex · reboot</b></span>
+            </div>
+
+            <div class="atlas-foundations" aria-label="Past work foundations">
+              <div class="atlas-foundation-title">
+                <strong>过往工作基础</strong>
+                <span>Past Work Foundations</span>
+              </div>
+              <div class="atlas-foundation-item">
+                <span class="atlas-foundation-icon atlas-foundation-ultrasound" aria-hidden="true"></span>
+                <strong>超声机器人与感知</strong>
+                <em>Ultrasound Robotics &amp; Perception</em>
+              </div>
+              <div class="atlas-foundation-item">
+                <span class="atlas-foundation-icon atlas-foundation-hydraulic" aria-hidden="true"></span>
+                <strong>液压机械臂共享控制</strong>
+                <em>Hydraulic Manipulator Shared Control</em>
+              </div>
+              <div class="atlas-foundation-item">
+                <span class="atlas-foundation-icon atlas-foundation-compliance" aria-hidden="true"></span>
+                <strong>柔顺交互控制</strong>
+                <em>Compliant Interaction Control</em>
+              </div>
+              <div class="atlas-foundation-item">
+                <span class="atlas-foundation-icon atlas-foundation-world" aria-hidden="true"></span>
+                <strong>世界模型驱动的探头引导</strong>
+                <em>World-Model-based Probe Guidance</em>
+              </div>
+            </div>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -406,8 +630,9 @@
             <div class="pub-body">
             <h3 class="pub-title">Dynamic impact of hydraulic systems using pressure feedback for active damping</h3>
             <p class="pub-authors">Min Cheng; <strong>Shaqi Luo</strong>; Ruqi Ding; Bing Xu; Junhui Zhang</p>
-            <p class="pub-venue">Applied Mathematical Modelling · 2021 · 89: 454–469 · SCI (IF=5.336, CAS Q1, Top journal) · <strong>Second author</strong> (advisor as first & corresponding; student as second author)</p>
+            <p class="pub-venue">Applied Mathematical Modelling · 2021 · 89: 454–469 · SCI (IF=5.336, CAS Q1, Top journal) · <strong>Second author</strong> (advisor as first &amp; corresponding author; Shaqi Luo as second author)</p>
             <div class="pub-links">
+              <a class="btn" href="https://doi.org/10.1016/j.apm.2020.07.043" target="_blank" rel="noopener">doi</a>
               <a class="btn" href="https://scholar.google.com/citations?user=pzZN6xsAAAAJ&hl=zh-CN" target="_blank" rel="noopener">scholar</a>
               <a class="btn" href="https://www.sciencedirect.com/science/article/pii/S0307904X2030408X" target="_blank" rel="noopener">paper</a>
             </div>
@@ -444,10 +669,10 @@
             <div class="pub-body">
             <h3 class="pub-title">Comparison of acceleration control and pressure feedback for active damping improvement of hydraulic manipulators</h3>
             <p class="pub-authors">Min Cheng; <strong>Shaqi Luo</strong>*; Junhui Zhang; Bing Xu; Ruqi Ding</p>
-            <p class="pub-venue">AIM · 2019 · Oral · IEEE/ASME conference</p>
+            <p class="pub-venue">AIM · 2019 · Oral · IEEE/ASME conference · <strong>Second author</strong> (advisor as first &amp; corresponding author; Shaqi Luo as second author)</p>
             <div class="pub-links">
+              <a class="btn" href="https://doi.org/10.1109/AIM.2019.8868421" target="_blank" rel="noopener">doi</a>
               <a class="btn" href="https://scholar.google.com/citations?user=pzZN6xsAAAAJ&hl=zh-CN" target="_blank" rel="noopener">scholar</a>
-              <a class="btn" href="#" aria-disabled="true">paper</a>
             </div>
             </div>
           </article>
@@ -764,8 +989,9 @@
             <div class="pub-body">
             <h3 class="pub-title">Dynamic impact of hydraulic systems using pressure feedback for active damping</h3>
             <p class="pub-authors">Min Cheng; <strong>Shaqi Luo</strong>; Ruqi Ding; Bing Xu; Junhui Zhang</p>
-            <p class="pub-venue">Applied Mathematical Modelling · 2021 · 89: 454–469 · SCI (IF=5.336, CAS Q1, Top journal) · <strong>Second author</strong> (advisor as first &amp; corresponding; student as second author)</p>
+            <p class="pub-venue">Applied Mathematical Modelling · 2021 · 89: 454–469 · SCI (IF=5.336, CAS Q1, Top journal) · <strong>Second author</strong> (advisor as first &amp; corresponding author; Shaqi Luo as second author)</p>
             <div class="pub-links">
+              <a class="btn" href="https://doi.org/10.1016/j.apm.2020.07.043" target="_blank" rel="noopener">doi</a>
               <a class="btn" href="https://scholar.google.com/citations?user=pzZN6xsAAAAJ&hl=zh-CN" target="_blank" rel="noopener">scholar</a>
               <a class="btn" href="https://www.sciencedirect.com/science/article/pii/S0307904X2030408X" target="_blank" rel="noopener">paper</a>
             </div>
@@ -902,10 +1128,10 @@
             <div class="pub-body">
             <h3 class="pub-title">Comparison of acceleration control and pressure feedback for active damping improvement of hydraulic manipulators</h3>
             <p class="pub-authors">Min Cheng; <strong>Shaqi Luo</strong>*; Junhui Zhang; Bing Xu; Ruqi Ding</p>
-            <p class="pub-venue">AIM · 2019 · Oral · IEEE/ASME conference</p>
+            <p class="pub-venue">AIM · 2019 · Oral · IEEE/ASME conference · <strong>Second author</strong> (advisor as first &amp; corresponding author; Shaqi Luo as second author)</p>
             <div class="pub-links">
+              <a class="btn" href="https://doi.org/10.1109/AIM.2019.8868421" target="_blank" rel="noopener">doi</a>
               <a class="btn" href="https://scholar.google.com/citations?user=pzZN6xsAAAAJ&hl=zh-CN" target="_blank" rel="noopener">scholar</a>
-              <a class="btn" href="#" aria-disabled="true">paper</a>
             </div>
             </div>
           </article>
@@ -918,13 +1144,24 @@
         <h2>Contact</h2>
         <ul class="contact-list">
           <li><span>Institution</span><strong>Beijing Academy of Artificial Intelligence (BAAI)</strong></li>
-          <li><span>Email</span><a href="mailto:luoshaqi@163.com">luoshaqi@163.com</a></li>
+          <li><span>Primary Email</span><a href="mailto:luoshaqi@163.com">luoshaqi@163.com</a></li>
           <li><span>Email (BAAI)</span><a href="mailto:sqluo@baai.ac.cn">sqluo@baai.ac.cn</a></li>
           <li>
             <span>WeChat</span>
             <div class="wechat-contact">
               <img class="wechat-qr" src="assets/wechat-qr.png" alt="WeChat QR code for Shaqi Luo" />
               <div class="wechat-hint">扫一扫上面的二维码图片，加我为朋友。</div>
+            </div>
+          </li>
+          <li>
+            <span>Xiaohongshu</span>
+            <div class="xiaohongshu-contact">
+              <img class="xiaohongshu-qr" src="assets/xiaohongshu-qr.jpg" alt="Xiaohongshu QR code for Shaqi Luo" loading="lazy" decoding="async" />
+              <div class="xiaohongshu-hint">
+                <strong>罗莎祁</strong><br />
+                小红书号：5369333900<br />
+                扫描二维码，在小红书找到我。
+              </div>
             </div>
           </li>
           <li><span>Google Scholar</span><a href="https://scholar.google.com/citations?user=pzZN6xsAAAAJ&hl=zh-CN" target="_blank" rel="noopener">scholar profile</a></li>
